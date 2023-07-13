@@ -7,12 +7,12 @@
 
 ## 구성인원
 000,000,000,000 <br/>
-FN_HTML : 홍길동
-FN_CSS : 남길동,동길동
-FN_JS : 서길동
+FN_HTML : 홍길동 <br/>
+FN_CSS : 남길동,동길동 <br/>
+FN_JS : 서길동 <br/>
 
 ## Description
-
+##### -
 
 ## 강사 Comment 
 ##### - HTML 구조 먼저 만들기
