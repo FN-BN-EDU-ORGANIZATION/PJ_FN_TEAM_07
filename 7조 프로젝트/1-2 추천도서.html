@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>백천도서관 > 자료검색 > 통합자료검색</title>
+    <link rel="stylesheet" href="./css/datasearchbody.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/replax.css">
+    <link rel="stylesheet" href="css/board.css">
+    <link rel="stylesheet" href="./css/footer_bottom.css">
+    <link rel="stylesheet" href="./css/recomend.css">
+</head>
+
+<body id="body">
+    <div id="wrap">
+        <header id="header">
+            <div class="head">
+                <div class="head_bar">
+                    <div class="head_member">
+                        <div><a href="#">회원가입</a></div>
+                        <div><a href="#">통합회원인증</a></div>
+                        <div><a href="#">통합허브시스템 로그인</a></div>
+                    </div>
+                </div>
+                <div class="head_search">
+                    <div class="logo">
+                        <a href=""><img src="./css/img/logo.png" alt="로고이미지"></a>
+                    </div>
+                    <ul class="nav">
+                        <li class="dep1">
+                            <a href=""><span>자료검색</span></a>
+                            <ul class="dep2">
+                                <li><a href="./1-1 통합자료검색.html">통합검색</a></li>
+                                <li><a href="./1-2 추천도서.html">추천도서</a></li>
+                                <li><a href="./1-3 희망도서신청.html">희망도서신청</a></li>
+                            </ul>
+                        </li>
+                        <li class="dep1">
+                            <a href=""><span>대여안내</span></a>
+                            <ul class="dep2">
+                                <li><a href="./2-1 도서대출.html">도서대출</a></li>
+                                <li><a href="./2-2 도서반납.html">도서반납</a></li>
+                                <li><a href="./2-3 도서예약.html">대여예약</a></li>
+                            </ul>
+                        </li>
+                        <li class="dep1">
+                            <a href=""><span>열린공간</span></a>
+                            <ul class="dep2">
+                                <li><a href="./3-1 공지사항.html">공지사항</a></li>
+                                <li><a href="./3-2 묻고답하기.html">묻고답하기</a></li>
+                                <li><a href="./3-3 도서리뷰.html">책리뷰</a></li>
+                            </ul>
+                        </li>
+                        <li class="dep1">
+                            <a href=""><span>도서관소개</span></a>
+                            <ul class="dep2">
+                                <li><a href="./">소개글</a></li>
+                                <li><a href="">오는길</a></li>
+                            </ul>
+                        </li>
+                        <li class="dep1">
+                            <a href=""><span>나의도서관</span></a>
+                            <ul class="dep2">
+                                <li><a href="./5-1 나의대여리스트.html">나의 대여리스트</a></li>
+                                <li><a href="./5-2 나의책계획.html">나의 책계획</a></li>
+                            </ul>
+                        </li>
+                        <div class="">
+                            <a href=""><img src="./css/img/menubar.png" alt="메뉴바"></a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <body>
+            <div class="sub-visual">
+                <div class="doc-info">
+                    <div class="doc-title">
+                        <h3>통합자료검색</h3>
+                        <ol>
+                            <li class="first"><a href=""><img src="./css/img/navi_home_icon.gif"></a></li>
+                            <li><a href=""><img src="css/img/sub_con4.png" alt=""> 자료검색</a></li>
+                            <li><a href=""><img src="css/img/sub_con4.png" alt="">추천도서</a></li>
+                        </ol>
+                    </div>
+                    <div class="end"></div>
+                </div>
+            </div>
+
+            <!-- 왼쪽 사이드 바 -->
+            <div class="section">
+                <div class="lnb">
+                    <h2><b>자료검색</b></h2>
+                    <ul class="SubMenu">
+                        <li id="menu_01"><a href="자료검색_통합자료검색.html"><span>통합자료검색</span></a></li>
+                        <li id="menu_02"><a href="추천도서.html"><span>추천도서</span></a></li>
+                        <li id="menu_01"><a href="희망도서추천.html"><span>희망도서추천</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- 게시판영역 -->
+                <div class="content">
+                    <div class="doc">
+                        <div class="doc-bodycon88" id="contentArea">
+                            <form id="board" action="">
+                                <div class="text-rightbtn">
+                                    추천년월 :
+                                    <a href="" class="btn_new_btn01">
+                                        <button class="prebtn">
+                                            < </button>
+                                                <!-- <span class="blind">이전달</span> -->
+                                    </a>
+                                    <label for="plan_year"></label>
+                                    <select name="plan_year" id="plan_year" style="width: 80px;" class="select_box">
+                                        <option value="2024">2024년</option>
+                                        <option value="2023" selected="selected">2023년</option>
+                                        <option value="2022">2022년</option>
+                                        <option value="2021">2021년</option>
+                                        <option value="2020">2020년</option>
+                                        <option value="2019">2019년</option>
+                                        <option value="2018">2018년</option>
+                                        <option value="2017">2017년</option>
+                                        <option value="2016">2016년</option>
+                                        <option value="2015">2015년</option>
+                                        <option value="2014">2014년</option>
+                                        <option value="2013">2013년</option>
+                                        <option value="2012">2012년</option>
+                                        <option value="2011">2011년</option>
+                                        <option value="2010">2010년</option>
+                                        <option value="2009">2009년</option>
+                                    </select>
+                                    <label for="plan_month"></label>
+                                    <select name="plan_month" id="plan_month" style="width: 65px;" class="select_box">
+                                        <option value="01">1월</option>
+                                        <option value="02">2월</option>
+                                        <option value="03">3월</option>
+                                        <option value="04">4월</option>
+                                        <option value="05">5월</option>
+                                        <option value="06">6월</option>
+                                        <option selected="selected" value="07">7월</option>
+                                        <option value="08">8월</option>
+                                        <option value="09">9월</option>
+                                        <option value="10">10월</option>
+                                        <option value="11">11월</option>
+                                        <option value="12">12월</option>
+                                    </select>
+                                    <a href="#"><button type="button" class="move_btn">이동</button></a>
+                                    <a href="" class="btn_new_btn01">
+                                        <button class="prebtn"> > </button>
+                                        <!-- <span class="blind">이전달</span> -->
+                                    </a>
+                                </div>
+                                <div class="serial-wrap" style="margin-top: 20px;">
+                                    <div class="smain">
+                                        <div class="box">
+                                            <div class="search-results">
+                                                <div class="row">
+                                                    <div class="thumb">
+                                                        <a href="">
+                                                            <img src="./css/img/추천도서1.jpg" alt="챗GPT에게 묻는 인류의 미래"
+                                                                style="height: 105.6px;">
+                                                        </a>
+                                                    </div>
+                                                    <div class="box">
+                                                        <div class="item">
+                                                            <div class="bif">
+                                                                <a href="" class="name">
+                                                                    챗GPT에게 묻는 인류의 미래
+                                                                </a>
+                                                                <ul class="con2">
+                                                                    <li>저자 : 김대식,챗GPT 지음 ; 추서연 외...</li>
+                                                                    <li>출판사 : 동아시아</li>
+                                                                    <li>출판년도 : 2023</li>
+                                                                    <li>소장자료실 : [백천]종합자료실</li>
+                                                                    <li>청구기호 : 일 331.54-김222ㅊ</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="thumb">
+                                                        <a href="">
+                                                            <img src="./css/img/추천도서2.jpg" alt="챗GPT에게 묻는 인류의 미래"
+                                                                style="height: 105.6px;">
+                                                        </a>
+                                                    </div>
+                                                    <div class="box">
+                                                        <div class="item">
+                                                            <div class="bif">
+                                                                <a href="" class="name">
+                                                                    GPT 제너레이션
+                                                                </a>
+                                                                <ul class="con2">
+                                                                    <li>저자 : 이시한 지음</li>
+                                                                    <li>출판사 : 북모먼트</li>
+                                                                    <li>출판년도 : 2023</li>
+                                                                    <li>소장자료실 : [백천]종합자료실</li>
+                                                                    <li>청구기호 : 일 331.5412-이59ㅈ</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="button bbs-btn right" style="clear: both;"> </div>
+                            <div id="board_paging" class="dataTables_paginate">
+                                <span>
+                                    <a href class="paginate_button current" title="1페이지" keyvalue="1">1</a>
+                                    <a href class="paginate_button" title="2페이지" keyvalue="2">2</a>
+                                    <a href class="paginate_button" title="3페이지" keyvalue="3">3</a>
+                                    <a href class="paginate_button" title="4페이지" keyvalue="4">4</a>
+                                    <a href class="paginate_button" title="5페이지" keyvalue="5">5</a>
+                                    <a href class="paginate_button" title="6페이지" keyvalue="6">6</a>
+                                </span>
+                            </div>
+
+                            <div class="search txt-center" style="margin-top: 25px;">
+                                <fieldset>
+                                    <label class="blind" for="search_type">검색조건</label>
+
+                                    <select id="search_type" name="search_type" class="selectmenu new_select_box">
+                                        <option value="title+content">제목 + 내용</option>
+                                        <option value="title">제목</option>
+                                        <option value="content">내용</option>
+                                        <option value="user_name">글작성자</option>
+                                    </select>
+                                    <input id="search_text_board" name="search_text" class="text new_text01"
+                                        style="ime-mode: active;" title="검색어" placeholder="검색어를 입력하세요" accesskey="s"
+                                        type="text" value alt="검색어">
+                                    <label for="search_text_board" class="blind">검색어</label>
+                                    <a href class="btn btn1" id="board_btn_search" title="검색">
+                                        <i class="fa fa-search"></i>
+                                        <span>검색</span>
+                                    </a>
+                                </fieldset>
+                            </div>
+                            <script></script>
+                        </div>
+                        </form>
+                        <div id="menuRatingDiv"></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="end"></div>
+</body>
+<footer>
+    <footer id="footer">
+        <div class="footer_top"></div>
+        <div class="footer_body"></div>
+        <div class="footer_bottom">
+            <div class="tedory">
+                <div class="dosu_nav">
+                    <div><a href="">개인정보처리방침</a></div>
+                    <div><a href="">영상정보처리방침</a></div>
+                    <div><a href="">이용약관</a></div>
+                    <div><a href="">도서관서비스헌장</a></div>
+                    <div><a href="">저작권보호정책</a></div>
+                    <div><a href="">뷰어다운로드</a></div>
+                </div>
+                <div class="dosu_last">
+                    <div class="left">
+                        <div>
+                            <p>경산시 백천동(백천동,백천도서관) 전화 xxx-xxx-xxxx<br /><br />Copyright ⓒ 배천동 백천도서관.All right reserved.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</footer>
+</div>
+</body>
+
+</html>
