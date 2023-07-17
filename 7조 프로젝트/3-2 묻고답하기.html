@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/replax.css">
+    <link rel="stylesheet" href="css/board.css">
+    <link rel="stylesheet" href="./css/footer_bottom.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="head">
+                <div class="head_bar">
+                    <div class="head_member">
+                        <div><a href="#">회원가입</a></div>
+                        <div><a href="#">통합회원인증</a></div>
+                        <div><a href="#">통합허브시스템 로그인</a></div>
+                    </div>
+                </div>
+                <div class="head_search">
+                    <div class="logo">
+                        <a href=""><img src="./css/img/logo.png" alt="로고이미지"></a>
+                    </div>
+                    <ul class="nav">
+                        <li class="dep1">
+                            <a href=""><span>자료검색</span></a>
+                            <ul class="dep2">
+                                <li><a href="./1-1 통합자료검색.html">통합검색</a></li>
+                                <li><a href="./1-2 추천도서.html">추천도서</a></li>
+                                <li><a href="./1-3 희망도서신청.html">희망도서신청</a></li>
+                            </ul>
+                        </li>
+                        <li class="dep1">
+                            <a href=""><span>대여안내</span></a>
+                            <ul class="dep2">
+                                <li><a href="./2-1 도서대출.html">도서대출</a></li>
+                                <li><a href="./2-2 도서반납.html">도서반납</a></li>
+                                <li><a href="./2-3 도서예약.html">대여예약</a></li>
+                            </ul>
+                        </li>
+                        <li class="dep1">
+                            <a href=""><span>열린공간</span></a>
+                            <ul class="dep2">
+                                <li><a href="./3-1 공지사항.html">공지사항</a></li>
+                                <li><a href="./3-2 묻고답하기.html">묻고답하기</a></li>
+                                <li><a href="./3-3 도서리뷰.html">책리뷰</a></li>
+                            </ul>
+                        </li>
+                        <li class="dep1">
+                            <a href=""><span>도서관소개</span></a>
+                            <ul class="dep2">
+                                <li><a href="./">소개글</a></li>
+                                <li><a href="">오는길</a></li>
+                            </ul>
+                        </li>
+                        <li class="dep1">
+                            <a href=""><span>나의도서관</span></a>
+                            <ul class="dep2">
+                                <li><a href="./5-1 나의대여리스트.html">나의 대여리스트</a></li>
+                                <li><a href="./5-2 나의책계획.html">나의 책계획</a></li>
+                            </ul>
+                        </li>
+                        <div class="">
+                            <a href=""><img src="./css/img/menubar.png" alt="메뉴바"></a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <body>
+            <div class="sub-visual">
+                <div class="doc-info">
+                    <div class="doc-title">
+                        <h3>묻고답하기</h3>
+                        <ol>
+                            <li class="first"><a href=""><img src="./css/img/navi_home_icon.gif" alt=""></a></li>
+                            <li><a href=""><img src="./css/img/sub_con4.png" alt=""> 열린공간</a></li>
+                            <li><a href=""><img src="./css/img/sub_con4.png" alt=""> 묻고답하기</a></li>
+                        </ol>
+
+                        <!-- 인쇄,sns공유,qr코드 버튼 -->
+                        <!-- <div class="shareArea">
+                            <ul>
+                                <li><a href=""></a></li> 
+                                <li><a href=""></a></li>
+                                <li class="last"><a href=""></a></li>
+                            </ul>
+                        </div> -->
+
+                    </div>
+                    <div class="end"></div>
+                </div>
+            </div>
+
+            <!-- 왼쪽에 위치하는 사이드바 -->
+            <div class="section">
+                <div class="lnb">
+                    <h2><b>열린공간</b></h2>
+                    <ul class="SubMenu">
+                        <li id="menu_01"><a href="./3-1 공지사항.html"><span>공지사항</span></a></li>
+                        <li id="menu_02"><a href="./3-2 묻고답하기.html"><span>묻고답하기</span></a></li>
+                        <li id="menu_02"><a href="./3-3 도서리뷰.html"><span>도서리뷰</span></a></li>
+                    </ul>
+                </div>
+
+                <!--게시판영역-->
+                <div class="content">
+                    <div class="doc">
+                        <div class="doc-body con38" id="contentArea">
+                            <div class="body">
+
+                                <!-- 게시판 메인 부분 -->
+                                <div class="wrapper-bbs">
+                                    <div class="infodesk">
+                                        <div class="button btn-group inline">
+                                            <span class="bbs-result" style="margin-right: 10px;">"총 게시물 : " <b>$</b>
+                                                "건"</span>
+                                            <!-- <label for = "rowCount"/> -->
+                                            <select id="rowCount" name="rowCount" class="selectmenu new_select_box"
+                                                style="width: 130px;" title="보기 개수 선택">
+                                                <option value="10" selected="selected">10개씩 보기</option>
+                                                <option value="20">20개씩 보기</option>
+                                                <option value="30">30개씩 보기</option>
+                                                <option value="40">40개씩 보기</option>
+                                                <option value="50">50개씩 보기</option>
+                                            </select>
+                                            <a href="#" id="rowCountSelect" class="btn btn1">이동</a>
+                                        </div>
+                                    </div>
+                                    <div class="table-wrap">
+                                        <table class="bbs center">
+                                            <caption>QNA 게시판</caption>
+
+                                            <!-- 게시글 나열 순서 -->
+                                            <thead>
+                                                <tr class="first">
+                                                    <th class="th1">번호</th>
+                                                    <th class="th2">제목</th>
+                                                    <th class="th3">처리상태</th>
+                                                    <th class="th4">작성자</th>
+                                                    <th class="th5">작성일</th>
+                                                    <th class="th6">조회수</th>
+                                                </tr>
+                                            </thead>
+                                            <!-- 게시판 안에 게시글 내용 들어가는 부분 -->
+                                            <tbody id="board_tbody">
+                                                <tr class="frist">
+                                                    <td class="td1">1</td>
+                                                    <td class="td2"><a href="#" keyvalue=""><span>책 예약 및 바로대출 관련
+                                                                문의입니다.</span></a></td>
+                                                    <td class="td4">완료</td>
+                                                    <td class="td5">비공개</td>
+                                                    <td class="td6">2023.12.07</td>
+                                                    <td class="td6">20</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td1">2</td>
+                                                    <td class="td2"><a href="#" keyvalue=""><span>문의드립니다.</span></a>
+                                                    </td>
+                                                    <td class="td4">완료</td>
+                                                    <td class="td5">비공개</td>
+                                                    <td class="td6">2023.12.07</td>
+                                                    <td class="td6">20</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>3</span></td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>4</span></td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>5</span></td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>6</span></td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>7</span></td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>8</span></td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>9</span></td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>10</span></td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                            </tbody>
+                                            <!--  -->
+                                        </table>
+                                    </div>
+
+                                    <!--하단 버튼 부분-->
+                                    <div class="button bbs-btn right" style="clear: both;">
+                                        <a href class="btn btn1 wirte"><span>글쓰기</span></a>
+                                    </div>
+                                    <div id="board_paging" class="dataTables_paginate">
+                                        <span>
+                                            <a href class="paginate_button current" title="1페이지" keyvalue="1">1</a>
+                                            <a href class="paginate_button" title="2페이지" keyvalue="2">2</a>
+                                            <a href class="paginate_button" title="3페이지" keyvalue="3">3</a>
+                                            <a href class="paginate_button" title="4페이지" keyvalue="4">4</a>
+                                            <a href class="paginate_button" title="5페이지" keyvalue="5">5</a>
+                                            <a href class="paginate_button" title="6페이지" keyvalue="6">6</a>
+                                        </span>
+                                    </div>
+
+                                    <!--하단 검색조건 부분-->
+                                    <div class="search txt-center" style="margin-top: 25px;">
+                                        <fieldset>
+                                            <label class="blind" for="search_type">검색조건</label>
+                                            <select id="search_type" name="search_type"
+                                                class="selectmenu new_select_box" style="width: 110px;">
+                                                <option value="title+content">제목 + 내용</option>
+                                                <option value="title">제목</option>
+                                                <option value="content">내용</option>
+                                                <option value="user_name">글작성자</option>
+                                            </select>
+                                            <input id="search_text_board" name="search_text" class="text new_text01"
+                                                style="ime-mode: active;" title="검색어" placeholder="검색어를 입력하세요"
+                                                accesskey="s" type="text" value alt="검색어">
+                                            <label for="search_text_board" class="blind">검색어</label>
+                                            <a href class="btn btn1" id="board_btn_search" title="검색">
+                                                <i class="fa fa-search"></i>
+                                                <span>검색</span>
+                                            </a>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                </form>
+                                <div id="menuRatingDiv"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="end"></div>
+
+        </body>
+        <footer>
+            <footer id="footer">
+                <div class="footer_top"></div>
+                <div class="footer_body"></div>
+                <div class="footer_bottom">
+                    <div class="tedory">
+                        <div class="dosu_nav">
+                            <div><a href="">개인정보처리방침</a></div>
+                            <div><a href="">영상정보처리방침</a></div>
+                            <div><a href="">이용약관</a></div>
+                            <div><a href="">도서관서비스헌장</a></div>
+                            <div><a href="">저작권보호정책</a></div>
+                            <div><a href="">뷰어다운로드</a></div>
+                        </div>
+                        <div class="dosu_last">
+                            <div class="left">
+                                <div>
+                                    <p>경산시 백천동(백천동,백천도서관) 전화 xxx-xxx-xxxx<br /><br />Copyright ⓒ 배천동 백천도서관.All right
+                                        reserved.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </footer>
+    </div>
+
+</body>
+
+</html>
