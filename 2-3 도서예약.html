@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/replax.css">
+    <link rel="stylesheet" href="css/board.css">
+    <link rel="stylesheet" href="./css/lend_body.css">
+    <link rel="stylesheet" href="./css/footer_bottom.css">
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="head">
+                <div class="head_bar">
+                    <div class="head_member">
+                        <div><a href="#">회원가입</a></div>
+                        <div><a href="#">통합회원인증</a></div>
+                        <div><a href="#">통합허브시스템 로그인</a></div>
+                    </div>
+                </div>
+                <div class="head_search">
+                    <div class="logo">
+                        <a href=""><img src="./css/img/logo.png" alt="로고이미지"></a>
+                    </div>
+                    <ul class="nav">
+                        <li class="dep1">
+                            <a href=""><span>자료검색</span></a>
+                            <ul class="dep2">
+                                <li><a href="./1-1 통합자료검색.html">통합검색</a></li>
+                                <li><a href="./1-2 추천도서.html">추천도서</a></li>
+                                <li><a href="./1-3 희망도서신청.html">희망도서신청</a></li>
+                            </ul>
+                        </li>
+                        <li class="dep1">
+                            <a href=""><span>대여안내</span></a>
+                            <ul class="dep2">
+                                <li><a href="./2-1 도서대출.html">도서대출</a></li>
+                                <li><a href="./2-2 도서반납.html">도서반납</a></li>
+                                <li><a href="./2-3 도서예약.html">대여예약</a></li>
+                            </ul>
+                        </li>
+                        <li class="dep1">
+                            <a href=""><span>열린공간</span></a>
+                            <ul class="dep2">
+                                <li><a href="./3-1 공지사항.html">공지사항</a></li>
+                                <li><a href="./3-2 묻고답하기.html">묻고답하기</a></li>
+                                <li><a href="./3-3 도서리뷰.html">책리뷰</a></li>
+                            </ul>
+                        </li>
+                        <li class="dep1">
+                            <a href=""><span>도서관소개</span></a>
+                            <ul class="dep2">
+                                <li><a href="./">소개글</a></li>
+                                <li><a href="">오는길</a></li>
+                            </ul>
+                        </li>
+                        <li class="dep1">
+                            <a href=""><span>나의도서관</span></a>
+                            <ul class="dep2">
+                                <li><a href="./5-1 나의대여리스트.html">나의 대여리스트</a></li>
+                                <li><a href="./5-2 나의책계획.html">나의 책계획</a></li>
+                            </ul>
+                        </li>
+                        <div class="">
+                            <a href=""><img src="./css/img/menubar.png" alt="메뉴바"></a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <body>
+            <div class="sub-visual">
+                <div class="doc-info">
+                    <div class="doc-title">
+                        <h3>도서예약</h3>
+                        <ol>
+                            <li class="first"><a href=""><img src="./css/img/navi_home_icon.gif" alt=""></a></li>
+                            <li><a href=""><img src="./css/img/sub_con4.png" alt=""> 대여안내</a></li>
+                            <li><a href=""><img src="./css/img/sub_con4.png" alt=""> 도서예약</a></li>
+                        </ol>
+
+                        <!-- 인쇄,sns공유,qr코드 버튼 -->
+                        <!-- <div class="shareArea">
+                                    <ul>
+                                        <li><a href=""></a></li> 
+                                        <li><a href=""></a></li>
+                                        <li class="last"><a href=""></a></li>
+                                    </ul>
+                                </div> -->
+
+                    </div>
+                    <div class="end"></div>
+                </div>
+            </div>
+    </div>
+
+    <!-- 왼쪽 사이드바 -->
+    <div class="section">
+        <div class="lnb">
+            <h2><b>대여안내</b></h2>
+            <ul class="SubMenu">
+                <li id="menu_01"><a href="./2-1 도서대출.html"><span>도서대여</span></a></li>
+                <li id="menu_02"><a href="./2-2 도서반납.html"><span>도서반납</span></a></li>
+                <li id="menu_02"><a href="./2-3 도서예약.html"><span>대여예약</span></a></li>
+            </ul>
+        </div>
+
+        <!--게시판영역-->
+        <div class="content">
+            <div class="doc">
+                <div class="doc-body con35" id="contentArea">
+                    <div class="body">
+                        <div class="lend_search">
+                            <input type="text" placeholder="도서 키워드를 입력해주세요">
+                            <div class="btngroup">
+                                <button type="button" class="btn1">예약</button>
+                                <button type="button" class="btn2">취소</button>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <table class="lend_tbl">
+                                <caption style="margin-bottom: 20px;">
+                                    <h2>나의 예약리스트</h2>
+                                </caption>
+                                <tr>
+                                    <th></th>
+                                    <th>책 이름</th>
+                                    <th>ISBN</th>
+                                    <th>저자</th>
+                                    <th>반납 예정일</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th>1</th>
+                                    <th>-</th>
+                                    <th>-</th>
+                                    <th>-</th>
+                                    <th>-</th>
+                                    <th><input type="radio"></th>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <th>-</th>
+                                    <th>-</th>
+                                    <th>-</th>
+                                    <th>-</th>
+                                    <th><input type="radio"></th>
+                                </tr>
+                                <tr>
+                                    <th>3</th>
+                                    <th>-</th>
+                                    <th>-</th>
+                                    <th>-</th>
+                                    <th>-</th>
+                                    <th><input type="radio"></th>
+                                </tr>
+                            </table>
+                            <div class="btngroup2">
+                                <button type="button" class="btn1">예약취소</button>
+                            </div>
+                        </div>
+                        <div class="doc-body">
+                            <h3>도서예약</h3>
+                            <ul class="con">
+                                <li>원하는 자료가 대출중인 경우 인터넷 또는 도서관을 방문하여 예약신청 가능합니다.</li>
+                                <li>도서가 반납되면 문자서비스로 통보합니다.</li>
+                                <li>예약만기일은 통보받은 날로부터 3일입니다.</li>
+                                <li>예약은 1인당 2권, 도서 1권당 2명까지 가능합니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="end"></div>
+</body>
+<footer>
+    <footer id="footer">
+        <div class="footer_top"></div>
+        <div class="footer_body"></div>
+        <div class="footer_bottom">
+            <div class="tedory">
+                <div class="dosu_nav">
+                    <div><a href="">개인정보처리방침</a></div>
+                    <div><a href="">영상정보처리방침</a></div>
+                    <div><a href="">이용약관</a></div>
+                    <div><a href="">도서관서비스헌장</a></div>
+                    <div><a href="">저작권보호정책</a></div>
+                    <div><a href="">뷰어다운로드</a></div>
+                </div>
+                <div class="dosu_last">
+                    <div class="left">
+                        <div>
+                            <p>경산시 백천동(백천동,백천도서관) 전화 xxx-xxx-xxxx<br /><br />Copyright ⓒ 배천동 백천도서관.All right reserved.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</footer>
+</div>
+
+</body>
+
+</html>
